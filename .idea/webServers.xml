@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="68e77b29-3da4-44bc-b9ad-9492d2fa639e" name="server" url="http://beta.joeyderuiter.me/">
+        <fileTransfer host="192.168.3.1" port="21" rootFolder="/beta_portfolio/" password="dffedfc3dfc0dfcddfcfdfd8df9bdf9b" username="web">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
