@@ -1,6 +1,6 @@
 <?php
 /**
-* Site class, contains most of 
+* Site class, contains most of the site
 */
 class SiteController
 {

@@ -33,13 +33,14 @@ switch ($command[0]) {
         break;
 
     case 'projects':
+
         
         break;
 
     default:
         $ctr = new IndexController();
         $ctr->header();
-
+        $ctr->content();
         $ctr->footer();
         break;
 }
