@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://joeyderuiter.me/" />
 
-    <title><?php echo(($site_name != "") ? $site_name . " | Joey de Ruiter" : "Joey de Ruiter");?></title>
+    <title><?= (($site_name != "") ? $site_name . " | Joey de Ruiter" : "Joey de Ruiter");?></title>
 
     <link rel="stylesheet" type="text/css" href="//<?= $_SERVER["SERVER_NAME"]; ?>/css/main.css">
     <link rel="stylesheet" type="text/css" href="//<?= $_SERVER["SERVER_NAME"]; ?>/css/font-awesome.min.css">

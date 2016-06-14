@@ -22,6 +22,7 @@ for ($i = 0; $i < count($script_name); $i++) {
 
 $command = array_values($request_uri);
 
+
 switch ($command[0]) {
 
     case 'contact':

@@ -16,7 +16,7 @@ function autoType(obj_id, string, typo) {
             } else {
                 obj.innerHTML = obj.innerHTML.substr(0, obj.innerHTML.length - 1);
             }
-        }.bind(this, currentValue), i++ * 120 + Math.round(Math.random() * 100));
+        }.bind(this, currentValue), i++ * 175);
     });
 }
 

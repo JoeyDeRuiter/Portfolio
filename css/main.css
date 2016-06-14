@@ -5,6 +5,10 @@ html, body{
     width: 100%;
     display: block;
 	font-family: 'Roboto', sans-serif;
+
+    background-image: url("../img/background.png");
+    background-repeat: repeat-x;
+    background-color: #fff;
 }
 
 #mobile-menu-toggle, .mobile-menu {
@@ -108,6 +112,12 @@ html, body{
     top: 0;
 }
 
+#mobile-menu-toggle:checked ~ i {
+
+
+    color: pink;
+}
+
 /* Mobile menu */
 .mobile-menu {
     position: fixed;
@@ -208,6 +218,92 @@ html, body{
 
 .banner > p > #blink {
     color: #ff0000;
+}
+
+/* Index content */
+.featuredlist {
+    width: 30vw;
+    height: auto;
+    float: right;
+}
+
+.featuredlist h3 {
+    padding: 0;
+    margin: 15px 0 10px;
+    width: 28vw;
+    float: right;
+}
+
+.featureditem {
+    width: 28vw;
+    height: 18vw;
+    margin: 0 0 15px;
+    float: right;
+    position: relative;
+}
+
+.featureditem:first-child {
+    margin: 15px 0;
+}
+
+.featureditem a img {
+    -webkit-transition : -webkit-filter 500ms linear;
+    -moz-transition: .5s filter ease;
+    -o-transition: .5s -o-filter ease;
+    transition: 0.5s filter ease, 0.5s -webkit-filter ease;
+}
+
+
+.featureditem a .overlay {
+    -webkit-transition: .5s opacity ease;
+    -moz-transition: .5s opacity ease;
+    -o-transition: .5s opacity ease;
+    transition: 0.5s opacity ease;
+}
+
+.featureditem:hover > a img{
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.featureditem:hover > a .overlay {
+    opacity: 1;
+}
+
+.featureditem > a > img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
+
+.featureditem > a > h3 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 90%;
+    color: #ffffff;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.featureditem > a > .overlay {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid red;
+    opacity: 0;
+    z-index: 10;
 }
 
 /* Small desktop */
