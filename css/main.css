@@ -231,24 +231,24 @@ html, body{
     float: left;
 }
 
-.content h1 {
+.content > h1 {
     padding: 0;
     margin: 10px 30px;
 }
 
 
-.content img {
+.content > img {
     margin: 5px;
     padding: 0;
     float: right;
 }
 
-.content b {
+.content > b {
     padding: 0;
     margin: 0 30px;
 }
 
-.content p {
+.content > p {
     padding: 0;
     margin: 0 30px;
 }
@@ -317,6 +317,16 @@ html, body{
     filter: brightness(40%);
 }
 
+/* Projects */
+.projects {
+    width: 100%;
+    height: 600px;
+    background-color: #f8f8fa; }
+
+.post {
+
+}
+
 .featureditem > a > h3 {
     padding: 0;
     margin: 0;
@@ -357,6 +367,25 @@ html, body{
     .header > .inner > .menu { display: none; }
     .header > .inner > .hamburger { display: block; }
     .mobile-menu { display: block; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content .video {
+        margin: 30px auto 0;
+        width: 97%;
+        position:relative;
+        padding-bottom:56.25%;
+        height:0;
+        overflow:hidden;
+    }
+    .video iframe, .video object, .video embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+
+    .featuredlist { float: initial; margin: 0 auto; width: 100%;}
+    .featuredlist h3 { padding: 10px; margin: 0; }
 }
 
 /* Mobile CSS */
@@ -366,6 +395,26 @@ html, body{
     .header > .inner > .logo > a { font-size: 30px; }
     .mobile-menu { display: block; }
     .banner > p { font-size: 40px; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content .video {
+        margin: 30px auto 0;
+        width: 97%;
+        position:relative;
+        padding-bottom:56.25%;
+        height:0;
+        overflow:hidden;
+    }
+    .video iframe, .video object, .video embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .featuredlist { float: initial; margin: 0 auto; width: 100%;}
+    .featuredlist h3 { padding: 10px; margin: 0; }
+
 }
 
 /* Really tiny displays */
@@ -375,6 +424,25 @@ html, body{
     .header > .inner > .logo > a { font-size: 30px; }
     .mobile-menu { display: block; }
     .banner > p { font-size: 40px; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content .video {
+        margin: 30px auto 0;
+        width: 97%;
+        position:relative;
+        padding-bottom:56.25%;
+        height:0;
+        overflow:hidden;
+    }
+    .video iframe, .video object, .video embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .featuredlist { float: initial; margin: 0 auto; width: 100%;}
+    .featuredlist h3 { padding: 10px; margin: 0; }
 }
 
 /* Portrait phones */
@@ -389,6 +457,25 @@ html, body{
         display: inline-block;
         width: 50%;
     }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content { float: initial; width: 100%; margin: 15px 0 0; }
+    .content .video {
+        margin: 30px auto 0;
+        width: 97%;
+        position:relative;
+        padding-bottom:56.25%;
+        height:0;
+        overflow:hidden;
+    }
+    .video iframe, .video object, .video embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .featuredlist { float: initial; margin: 0 auto; width: 100%;}
+    .featuredlist h3 { padding: 10px; margin: 0; }
 }
 
 /* Animations */

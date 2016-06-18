@@ -34,8 +34,10 @@ switch ($command[0]) {
         break;
 
     case 'projects':
-
-        
+        $ctr = new ProjectsController();
+        $ctr->header();
+        $ctr->content();
+        $ctr->footer();
         break;
 
     default:

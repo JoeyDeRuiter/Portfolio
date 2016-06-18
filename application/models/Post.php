@@ -1,6 +1,6 @@
 <?php
 
-class FeaturedPost
+class Post
 {
     public $id;
     public $poster;
