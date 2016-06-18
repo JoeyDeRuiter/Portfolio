@@ -29,7 +29,7 @@ class IndexController extends SiteController
 
             if($stmt->num_rows >= 1) {
                 while($stmt->fetch()) {
-                    $featured[] = new FeaturedPost($db_id, $db_poster, $db_title, $db_post, $db_img, $db_timestamp);
+                    $featured[] = new Post($db_id, $db_poster, $db_title, $db_post, $db_img, $db_timestamp);
                 }
             }
         }
