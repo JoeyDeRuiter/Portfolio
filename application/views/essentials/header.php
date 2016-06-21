@@ -6,9 +6,9 @@
 
 		<div class="menu">
 			<ul>
-				<li><a href="/projects/">Projecten</a></li>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/contact/">Contact</a></li>
+				<li><a href="/projects">Projecten</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 
@@ -25,9 +25,9 @@
 
     <div class="menu">
         <ul>
-            <li><a href="/projects/">Projecten</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/projects">Projecten</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
 </div>

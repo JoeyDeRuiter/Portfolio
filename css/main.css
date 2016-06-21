@@ -327,6 +327,49 @@ html, body{
 
 }
 
+.post > a {
+    text-decoration: none;
+}
+
+.post > a > h3 {
+    margin: 5px 0;
+    padding: 0 30px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.post > a > img {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.post > p {
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.post > .footer {
+    padding: 0 30px;
+    width: calc(100% - 60px);
+    height: 40px;
+    display: block;
+}
+
+.post > .footer > h4 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline-block;
+}
+
+.post > .footer > a {
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: inline-block;
+}
+
 .featureditem > a > h3 {
     padding: 0;
     margin: 0;
@@ -367,7 +410,6 @@ html, body{
     .header > .inner > .menu { display: none; }
     .header > .inner > .hamburger { display: block; }
     .mobile-menu { display: block; }
-<<<<<<< HEAD
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content .video {
         margin: 30px auto 0;
@@ -387,13 +429,6 @@ html, body{
 
     .featuredlist { float: initial; margin: 0 auto; width: 100%;}
     .featuredlist h3 { padding: 10px; margin: 0; }
-=======
-    .content { margin: 0; width: 100%; }
-    .featuredlist { margin: 0; width: 100%; float: left; }
-    .featureditem { margin: 0 auto; width: 50%; float: none}
-    .featureditem > a > h3 { font-size: 3vw; }
-
->>>>>>> efbf22340a7cc2750e77eddce52292ec947e7f2c
 }
 
 /* Mobile CSS */
@@ -403,7 +438,6 @@ html, body{
     .header > .inner > .logo > a { font-size: 30px; }
     .mobile-menu { display: block; }
     .banner > p { font-size: 40px; }
-<<<<<<< HEAD
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content .video {
@@ -423,14 +457,6 @@ html, body{
     }
     .featuredlist { float: initial; margin: 0 auto; width: 100%;}
     .featuredlist h3 { padding: 10px; margin: 0; }
-
-=======
-    .content { margin: 0; width: 100%; }
-    .content img { margin: 0 auto; padding: 0; width: 98%; height: auto; float: none;}
-    .featuredlist { margin: 0; width: 100%; float: left; }
-    .featureditem { margin: 0; width: 100%; float: left; }
-    .featureditem > a > h3 { font-size: 4vw; }
->>>>>>> efbf22340a7cc2750e77eddce52292ec947e7f2c
 }
 
 /* Really tiny displays */
@@ -440,7 +466,6 @@ html, body{
     .header > .inner > .logo > a { font-size: 30px; }
     .mobile-menu { display: block; }
     .banner > p { font-size: 40px; }
-<<<<<<< HEAD
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content .video {
@@ -460,13 +485,6 @@ html, body{
     }
     .featuredlist { float: initial; margin: 0 auto; width: 100%;}
     .featuredlist h3 { padding: 10px; margin: 0; }
-=======
-    .content { margin: 0; width: 100%; }
-    .content img { margin: 0 auto; padding: 0; width: 98%; height: auto; float: none;}
-    .featuredlist { margin: 0; width: 100%; float: left; }
-    .featureditem { margin: 0; width: 100%; float: left; }
-    .featureditem > a > h3 { font-size: 5vw; }
->>>>>>> efbf22340a7cc2750e77eddce52292ec947e7f2c
 }
 
 /* Portrait phones */
@@ -481,7 +499,6 @@ html, body{
         display: inline-block;
         width: 50%;
     }
-<<<<<<< HEAD
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content { float: initial; width: 100%; margin: 15px 0 0; }
     .content .video {
@@ -501,13 +518,6 @@ html, body{
     }
     .featuredlist { float: initial; margin: 0 auto; width: 100%;}
     .featuredlist h3 { padding: 10px; margin: 0; }
-=======
-    .content { margin: 0; width: 100%; }
-    .content img { margin: 0 auto; padding: 0; width: 98%; height: auto; float: none;}
-    .featuredlist { margin: 0; width: 100%; float: left; }
-    .featureditem { margin: 0; width: 100%; float: left; }
-    .featureditem > a > h3 { font-size: 6vw; }
->>>>>>> efbf22340a7cc2750e77eddce52292ec947e7f2c
 }
 
 /* Animations */

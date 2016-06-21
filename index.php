@@ -31,10 +31,22 @@ switch ($command[0]) {
 
     case 'blog':
 
+
         break;
 
     case 'projects':
         $ctr = new ProjectsController();
+        $ctr->header("Projecten");
+
+        if(isset($command[1])) $ctr->content($command[1]);
+        else $ctr->content();
+
+        $ctr->footer();
+
+        break;
+
+    case '':
+        $ctr = new IndexController();
         $ctr->header();
         $ctr->content();
         $ctr->footer();
