@@ -28,6 +28,7 @@ switch ($command[0]) {
     case 'contact':
         $ctr = new ContactController();
         $ctr->header("Contact");
+        $ctr->content();
         $ctr->footer();
         break;
 

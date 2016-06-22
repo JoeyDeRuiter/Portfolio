@@ -17,6 +17,27 @@ class ContactController extends SiteController
 
     function content()
     {
+        $mysqli = new DatabaseController();
 
+        $featured = [];
+
+        $sql = "SELECT `ID` FROM `posts` ORDER BY `timestamp` DESC LIMIT 5";
+
+        // Mysql Prepared statements
+        // Featured list
+        if($stmt = $mysqli->prepare($sql))
+        {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($db_id);
+
+            if($stmt->num_rows >= 1) {
+                while($stmt->fetch()) {
+                    $featured[] = new Post($db_id);
+                }
+            }
+        }
+
+        include ROOT . DS . 'application' . DS . 'views' . DS . 'contact' . DS . 'content.php';
     }
 }

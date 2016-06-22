@@ -2,14 +2,16 @@
 
     <div class="content">
 
-        <h1>PROJECTEN</h1>
-
         <?php
+
+        if(!empty($projects_game) || !empty($projects_other))
+            echo "<h1>PROJECTEN</h1>";
+
         if(!empty($projects)) {
 
             foreach ($projects as $post) {
                 echo "<div class=\"post\">";
-                echo "<a href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\"><h3>" . $post->title . "</h3></a>";
+                echo "<a href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\"><h1>" . $post->title . "</h1></a>";
                 echo "<a href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\"><img src=\"" . $post->img . "\" alt=\"" . $post->title . "\" /></a>";
                 echo $post->post;
 
