@@ -26,12 +26,16 @@ $command = array_values($request_uri);
 switch ($command[0]) {
 
     case 'contact':
-
+        $ctr = new ContactController();
+        $ctr->header("Contact");
+        $ctr->footer();
         break;
 
     case 'blog':
-
-
+        $ctr = new BlogController();
+        $ctr->header("Blog");
+        $ctr->content();
+        $ctr->footer();
         break;
 
     case 'projects':
