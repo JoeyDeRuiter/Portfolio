@@ -34,7 +34,10 @@ switch ($command[0]) {
     case 'blog':
         $ctr = new BlogController();
         $ctr->header("Blog");
-        $ctr->content();
+
+        if(isset($command[1])) $ctr->content($command[1]);
+        else $ctr->content();
+
         $ctr->footer();
         break;
 

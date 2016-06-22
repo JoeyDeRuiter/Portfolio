@@ -14,4 +14,9 @@ class ContactController extends SiteController
         include 'application/views/essentials/head.php';
         include 'application/views/essentials/header.php';
     }
+
+    function content()
+    {
+
+    }
 }

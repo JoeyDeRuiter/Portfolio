@@ -31,21 +31,43 @@ class BlogController extends SiteController
             }
         }
 
-        // Fetch blog posts
-        $sql = "SELECT `ID` FROM `blogs` ORDER BY `timestamp`";
-        if($stmt = $mysqli->prepare($sql)) {
-            $stmt->execute();
-            $stmt->store_result();
-            $stmt->bind_result($db_id);
-
-            if($stmt->num_rows >= 1)
+        if($id === null) {
+            // Fetch blog posts
+            $sql = "SELECT `ID` FROM `blogs` ORDER BY `timestamp`";
+            if($stmt = $mysqli->prepare($sql))
             {
-                while($stmt->fetch())
+                $stmt->execute();
+                $stmt->store_result();
+                $stmt->bind_result($db_id);
+
+                if($stmt->num_rows >= 1)
                 {
+                    while($stmt->fetch())
+                    {
+                        $post = new BlogPost($db_id);
+                        // Filter out everything except the first <p> tag
+                        preg_match('/<p>(.*?)<\/p>/', $post->post, $tmp_post);
+                        $post->post = $tmp_post[0];
+                        $posts[] = $post;
+                    }
+                }
+            }
+        }
+        else
+        {
+            // Fetch single blog post on ID
+            $sql = "SELECT `ID` FROM `blogs` WHERE `ID` = ?";
+            if($stmt = $mysqli->prepare($sql))
+            {
+                $stmt->bind_param('i', $id);
+                $stmt->execute();
+                $stmt->store_result();
+                $stmt->bind_result($db_id);
+
+                if($stmt->num_rows >= 1)
+                {
+                    $stmt->fetch();
                     $post = new BlogPost($db_id);
-                    // Filter out everything except the first <p> tag
-                    preg_match('/<p>(.*?)<\/p>/', $post->post, $tmp_post); 
-                    $post->post = $tmp_post[0];
                     $posts[] = $post;
                 }
             }
