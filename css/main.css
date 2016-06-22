@@ -126,6 +126,8 @@ html, body{
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
+
+    overflow: hidden;
 }
 
 .mobile-menu > .exit {

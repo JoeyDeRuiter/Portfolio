@@ -1,4 +1,4 @@
-window.onload = setTimeout(function(){autoType("banner-txt", "Gamedeveloper", Math.round(Math.random()));}, 500);
+window.onload = setTimeout(function(){autoType("banner-txt", "Game developer", Math.round(Math.random()));}, 500);
 
 function autoType(obj_id, string, typo) {
     var chars = string.split("");
