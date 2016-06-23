@@ -245,6 +245,10 @@ html, body{
     margin: 10px 30px;
 }
 
+.content > h2 {
+    padding: 0;
+    margin: 10px 30px;
+}
 
 .content > img {
     margin: 5px;
@@ -326,8 +330,8 @@ html, body{
 }
 
 .featureditem:hover > a img{
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 .featureditem:hover > a .overlay {
@@ -356,6 +360,8 @@ html, body{
 
 .post > a {
     text-decoration: none;
+    margin: 10px 0;
+    padding: 0 30px;
 }
 
 .post > a > h3 {
