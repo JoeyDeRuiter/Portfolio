@@ -389,6 +389,10 @@ html, body{
     padding: 0 30px;
 }
 
+.post > .video {
+    text-align: center;
+}
+
 .post > .footer {
     padding: 0 30px;
     width: calc(100% - 60px);
