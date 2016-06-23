@@ -12,10 +12,9 @@
                 echo "<a href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\"><h3>" . $post->title . "</h3></a>";
                 echo (!empty($post->image)) ? "<a href=\"//" . $_SERVER["SERVER_NAME"] . "/blog/" . $post->id . "\"><img src=\"" . $post->image . "\" alt=\"" . $post->title . "\" /></a>" : "";
                 echo $post->post;
-
                 echo "<div class=\"footer\">";
                 echo "<h4>Gepost door: $post->poster_name</h4>";
-                echo "<a class=\"more\" href=\"//" . $_SERVER["SERVER_NAME"] . "/blog/" . $post->id . "\">Lees meer &gt;</a>";
+                echo (count($posts) > 1) ? "<a class=\"more\" href=\"//" . $_SERVER["SERVER_NAME"] . "/blog/" . $post->id . "\">Lees meer &gt;</a>" : "";
                 echo "</div>";
                 echo "</div>";
                 echo "<hr>";

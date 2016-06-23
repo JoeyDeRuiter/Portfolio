@@ -44,11 +44,7 @@ class BlogController extends SiteController
                 {
                     while($stmt->fetch())
                     {
-                        $post = new BlogPost($db_id);
-                        // Filter out everything except the first <p> tag
-                        preg_match('/<p>(.*?)<\/p>/', $post->post, $tmp_post);
-                        $post->post = $tmp_post[0];
-                        $posts[] = $post;
+                        $posts[] = new BlogPost($db_id);;
                     }
                 }
             }

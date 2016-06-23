@@ -17,7 +17,7 @@
 
                 echo "<div class=\"footer\">";
                 echo "<h4>Gepost door: $post->poster_name</h4>";
-                echo "<a class=\"more\" href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\">Lees meer &gt;</a>";
+                //echo "<a class=\"more\" href=\"//" . $_SERVER["SERVER_NAME"] . "/projects/" . $post->id . "\">Lees meer &gt;</a>";
                 echo "</div>";
                 echo "</div>";
                 echo "<hr>";
