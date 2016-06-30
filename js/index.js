@@ -1,4 +1,15 @@
-window.onload = setTimeout(function(){autoType("banner-txt", "Game developer", Math.round(Math.random()));}, 500);
+"use strict";
+window.onload = function() {
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
+    setTimeout(function(){
+        autoType("banner-txt", "Developer", Math.round(Math.random()));
+    }, 500)
+
+};
 
 function autoType(obj_id, string, typo) {
     var chars = string.split("");

@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="//<?= $_SERVER["SERVER_NAME"]; ?>/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Roboto:300,400,700,900' rel='stylesheet' type='text/css'>
 
+    <script src="//<?= $_SERVER["SERVER_NAME"]; ?>/js/particles.js"></script>
     <script src="//<?= $_SERVER["SERVER_NAME"]; ?>/js/index.js"></script>
 </head>
 <body>
