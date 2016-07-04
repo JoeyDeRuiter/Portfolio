@@ -460,7 +460,7 @@ html, body{
     .wrapper { width: 100%; }
     .content { width: calc(100% - 30vw); }
     .featuredlist { width: 30vw; }
-    .featureditem > a > h3 { font-size: 3em; }
+    .featureditem > a > h3 { font-size: 2em; }
 }
 
 /* Tablet CSS */

@@ -5,7 +5,7 @@
 
         <img src="//<?= $_SERVER["SERVER_NAME"]; ?>/img/profile.png" alt="Joey de Ruiter" />
 
-        <p>Ik ben Joey de Ruiter, 18 jaar oud en een mediatechnologie student aan het Grafisch Lyceum Rotterdam. Op dit moment ben ik op zoek naar een stageplek in de gamedevelopment industrie zodat ik volgend jaar succesvol kan afstuderen. Tevens ben ik in mijn vrijetijd bezig met gamedevelopment.</p>
+        <p>Ik ben Joey de Ruiter, 18 jaar oud en een mediatechnologie student aan het Grafisch Lyceum Rotterdam. Op dit moment ben ik op zoek naar een stageplek in de gamedevelopment of webdevelopment industrie zodat ik volgend jaar succesvol kan afstuderen. Tevens ben ik in mijn vrijetijd bezig met gamedevelopment en webdevelopment.</p>
         <br/><b>Favoriete quote:</b><br/>
         <p>"Programmer - an organism that turns coffee into software."<br/>
         - Author Unknown<br/></p>
