@@ -1,7 +1,6 @@
+<?php include_once(ROOT . DS . 'application' . DS . 'analyticstracking.php'); ?>
 <div class="wrapper">
-
     <div class="content">
-
         <?php
 
         if(!empty($projects_game) || !empty($projects_other))
@@ -44,7 +43,7 @@
 
         if(!empty($projects_other)) {
 
-            echo "<h2>Niet game gerelateerde projecten</h2>";
+            echo "<h2>Webprojecten</h2>";
 
             foreach ($projects_other as $post) {
                 echo "<div class=\"post\">";
@@ -61,7 +60,6 @@
             }
         }
         ?>
-
     </div>
 
     <div class="featuredlist">

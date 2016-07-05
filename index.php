@@ -50,7 +50,6 @@ switch ($command[0]) {
         else $ctr->content();
 
         $ctr->footer();
-
         break;
 
     case '':
@@ -61,9 +60,8 @@ switch ($command[0]) {
         break;
 
     default:
-        $ctr = new IndexController();
-        $ctr->header();
-        $ctr->content();
-        $ctr->footer();
+        http_response_code(404);
+        echo "<h1>Not found.</h1>";
+        echo "<p>The requested URL " . $_SERVER['REQUEST_URI'] . " was not found on this server.</p>";
         break;
 }

@@ -1,9 +1,7 @@
+<?php include_once(ROOT . DS . 'application' . DS . 'analyticstracking.php'); ?>
 <div class="wrapper">
-
     <div class="content">
-
         <h1>BLOG</h1>
-
         <?php
         if(!empty($posts)) {
 
@@ -21,7 +19,6 @@
             }
         }
         ?>
-
     </div>
 
     <div class="featuredlist">

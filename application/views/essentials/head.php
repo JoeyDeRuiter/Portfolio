@@ -5,8 +5,8 @@
     <meta http-equiv="cleartype" content="on">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
-	<meta name="description" content="Website van Joey de Ruiter, Gamedeveloper">
-	<meta name="keyword" content="Joey de Ruiter, de Ruiter, Joey, Gamedeveloper">
+	<meta name="description" content="Website van Joey de Ruiter, Software developer">
+	<meta name="keyword" content="Joey de Ruiter, de Ruiter, Joey, Gamedeveloper, Webdeveloper, Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:title" content="De thuisplaats van Joey de Ruiter" />
